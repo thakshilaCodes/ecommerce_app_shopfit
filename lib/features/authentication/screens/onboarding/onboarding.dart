@@ -1,3 +1,4 @@
+import 'package:ecommerce_app_shopfit/features/authentication/screens/onboarding/widgets/onboarding_dot_navigation.dart';
 import 'package:ecommerce_app_shopfit/features/authentication/screens/onboarding/widgets/onboarding_skip.dart';
 import 'package:ecommerce_app_shopfit/utils/constants/image_strings.dart';
 import 'package:ecommerce_app_shopfit/utils/constants/text_strings.dart';
@@ -33,6 +34,9 @@ class OnBoardingScreen extends StatelessWidget {
             ],
           ),
           OnBoardingSkip(),
+          OnBoardingDotNavigation()
+          
+          
 
 
         ],
@@ -40,5 +44,4 @@ class OnBoardingScreen extends StatelessWidget {
     );
   }
 }
-
 

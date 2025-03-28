@@ -6,7 +6,7 @@ class AppImages{
   static const String darkAppLogo="assets/logos/app-store-splash-logo-black.png";
   static const String lightAppLogo="assets/logos/app-store-splash-logo-white.png";
 
-  static const String onBoardingImage1="assets/images/on_boarding_images/onboarding_screen_5.gif";
+  static const String onBoardingImage1="assets/images/on_boarding_images/onboarding_screen_4.gif";
   static const String onBoardingImage2="assets/images/on_boarding_images/onboarding_screen_2.gif";
   static const String onBoardingImage3="assets/images/on_boarding_images/onboarding_screen_3.gif";
 
