@@ -13,6 +13,10 @@ class AppTexts{
   static const String onBoardingSubTitle3="From Our Doorstep To Yours - Swift, Secure and Countless Delivery!";
 
 
+  static const String loginTitle = "";
+  static const String loginSubTitle = "";
+
+
 
   //Home
 
