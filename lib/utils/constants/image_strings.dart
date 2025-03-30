@@ -13,6 +13,6 @@ class AppImages{
 
 
   //Social Logos
-  static const String google="assets/logos/google-icon.png";
-  static const String facebook ="assets/logos/facebook-icon.png";
+  static const String google="assets/icons/social_media_icons/google-icon.png";
+  static const String facebook ="assets/icons/social_media_icons/facebook-icon.png";
 }

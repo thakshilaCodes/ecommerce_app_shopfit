@@ -113,19 +113,59 @@ class LoginScreen extends StatelessWidget {
                 children: [
                   Flexible(
                     child: Divider(
-                      color: dark ? AppColors.darkGrey : AppColors.grey,
+                      color: dark ? AppColors.darkerGrey : AppColors.darkGrey,
                       thickness: 0.5,
                       indent: 60,
                       endIndent: 5,
                     ),
                   ),
-                  Text(AppTexts.orSignInWith.capitalize!,style: Theme.of(context).textTheme.labelMedium,),
+                  Text(
+                    AppTexts.orSignInWith.capitalize!,
+                    style: Theme.of(context).textTheme.labelMedium,
+                  ),
                   Flexible(
                     child: Divider(
-                      color: dark ? AppColors.darkGrey : AppColors.grey,
+                      color: dark ? AppColors.darkerGrey : AppColors.darkGrey,
                       thickness: 0.5,
                       indent: 5,
                       endIndent: 60,
+                    ),
+                  ),
+                ],
+              ),
+
+              SizedBox(height: AppSizes.spaceBtwSections,),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(color: AppColors.grey),
+                      borderRadius: BorderRadius.circular(100),
+                    ),
+                    child: IconButton(
+                      onPressed: () {},
+                      icon: Image(
+                        width: AppSizes.iconLg,
+                        height: AppSizes.iconLg,
+                        image: AssetImage(AppImages.google),
+                      ),
+                    ),
+                  ),
+                  SizedBox(width: AppSizes.spaceBtwItems,),
+                  Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(color: AppColors.grey),
+                      borderRadius: BorderRadius.circular(100),
+                    ),
+                    child: IconButton(
+                      onPressed: () {},
+                      icon: Image(
+                        width: AppSizes.iconLg,
+                        height: AppSizes.iconLg,
+                        image: AssetImage(AppImages.facebook),
+                      ),
                     ),
                   ),
                 ],
