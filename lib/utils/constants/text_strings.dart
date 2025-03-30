@@ -24,6 +24,10 @@ class AppTexts{
   static const String createAccount ="Create Account";
   static const String orSignInWith = "or sign in with";
 
+  static const String signupTitle = "Let's create your account";
+  static const String firstName = "First Name";
+  static const String lastName = "Last Name";
+
 
 
   //Home

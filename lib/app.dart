@@ -1,4 +1,5 @@
 import 'package:ecommerce_app_shopfit/features/authentication/screens/login/login.dart';
+import 'package:ecommerce_app_shopfit/features/authentication/screens/signup/signup.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -15,7 +16,7 @@ class App extends StatelessWidget {
       themeMode: ThemeMode.system,
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
-      home:  OnBoardingScreen(),
+      home:  SignupScreen(),
     );
   }
 }
