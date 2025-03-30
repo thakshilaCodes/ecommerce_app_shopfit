@@ -1,9 +1,12 @@
 import 'package:ecommerce_app_shopfit/common/styles/spacing_styles.dart';
+import 'package:ecommerce_app_shopfit/utils/constants/colors.dart';
 import 'package:ecommerce_app_shopfit/utils/constants/image_strings.dart';
 import 'package:ecommerce_app_shopfit/utils/constants/sizes.dart';
 import 'package:ecommerce_app_shopfit/utils/constants/text_strings.dart';
 import 'package:ecommerce_app_shopfit/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:iconsax/iconsax.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -30,7 +33,7 @@ class LoginScreen extends StatelessWidget {
                     AppTexts.loginTitle,
                     style: Theme.of(context).textTheme.headlineMedium,
                   ),
-                  SizedBox(height: AppSizes.sm),
+                  const SizedBox(height: AppSizes.sm),
                   Text(
                     AppTexts.loginSubTitle,
                     style: Theme.of(context).textTheme.bodyMedium,
@@ -38,7 +41,95 @@ class LoginScreen extends StatelessWidget {
                 ],
               ),
 
-              Form(child: Column(children: [TextFormField()])),
+              Form(
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(
+                    vertical: AppSizes.spaceBtwSections,
+                  ),
+                  child: Column(
+                    children: [
+                      TextFormField(
+                        decoration: InputDecoration(
+                          prefixIcon: Icon(Iconsax.direct_right),
+                          labelText: AppTexts.email,
+                        ),
+                      ),
+
+                      const SizedBox(height: AppSizes.spaceBtwItems),
+
+                      TextFormField(
+                        decoration: InputDecoration(
+                          prefixIcon: Icon(Iconsax.password_check),
+                          labelText: AppTexts.password,
+                          suffixIcon: Icon(Iconsax.eye_slash),
+                        ),
+                      ),
+                      const SizedBox(height: AppSizes.spaceBtwItems / 2),
+
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Checkbox(value: true, onChanged: (value) {}),
+                              const Text(AppTexts.rememberMe),
+                            ],
+                          ),
+
+                          TextButton(
+                            onPressed: () {},
+                            child: Text(AppTexts.forgetPassword),
+                          ),
+                        ],
+                      ),
+
+                      const SizedBox(height: AppSizes.spaceBtwItems),
+
+                      SizedBox(
+                        width: double.infinity,
+                        child: ElevatedButton(
+                          onPressed: () {},
+                          child: Text(AppTexts.signIn),
+                        ),
+                      ),
+
+                      const SizedBox(height: AppSizes.spaceBtwItems),
+
+                      SizedBox(
+                        width: double.infinity,
+                        child: OutlinedButton(
+                          onPressed: () {},
+                          child: Text(AppTexts.createAccount),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Flexible(
+                    child: Divider(
+                      color: dark ? AppColors.darkGrey : AppColors.grey,
+                      thickness: 0.5,
+                      indent: 60,
+                      endIndent: 5,
+                    ),
+                  ),
+                  Text(AppTexts.orSignInWith.capitalize!,style: Theme.of(context).textTheme.labelMedium,),
+                  Flexible(
+                    child: Divider(
+                      color: dark ? AppColors.darkGrey : AppColors.grey,
+                      thickness: 0.5,
+                      indent: 5,
+                      endIndent: 60,
+                    ),
+                  ),
+                ],
+              ),
             ],
           ),
         ),

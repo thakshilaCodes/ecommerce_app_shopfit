@@ -1,9 +1,10 @@
+import 'package:ecommerce_app_shopfit/features/authentication/screens/login/login.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class OnBoardingController extends GetxController {
   static OnBoardingController get instance => Get.find();
-  static const initialIndex = 2;
+  static const lastIndex = 2;
   final pageController = PageController();
   Rx<int> currentPageIndex = 0.obs;
 
@@ -13,12 +14,12 @@ class OnBoardingController extends GetxController {
 
   void dotNavigationClick(int index) {
     currentPageIndex.value = index;
-    pageController.jumpTo(double.parse(index.toString()));
+    pageController.jumpToPage(index);
   }
 
   void nextPage() {
-    if (currentPageIndex.value == initialIndex) {
-      // Get.to(LoginScreen());
+    if (currentPageIndex.value == lastIndex) {
+      Get.offAll(LoginScreen());
     } else {
       int page = currentPageIndex.value + 1;
       pageController.jumpToPage(page);
@@ -26,7 +27,9 @@ class OnBoardingController extends GetxController {
   }
 
   void skipPage() {
-    currentPageIndex.value = initialIndex;
-    pageController.jumpToPage(initialIndex);
+
+    Get.to(LoginScreen());
+    //currentPageIndex.value = lastIndex;
+    //pageController.jumpToPage(lastIndex);
   }
 }

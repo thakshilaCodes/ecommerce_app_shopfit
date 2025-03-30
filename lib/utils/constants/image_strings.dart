@@ -4,7 +4,7 @@ class AppImages{
 
   //App logos
   static const String darkAppLogo="assets/logos/app_logo.png";
-  static const String lightAppLogo="assets/logos/app-store-splash-logo-white.png";
+  static const String lightAppLogo="assets/logos/app_logo.png";
 
   static const String onBoardingImage1="assets/images/on_boarding_images/onboarding_screen_4.gif";
   static const String onBoardingImage2="assets/images/on_boarding_images/onboarding_screen_2.gif";
