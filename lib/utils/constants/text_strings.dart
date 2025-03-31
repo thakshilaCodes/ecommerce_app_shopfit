@@ -27,7 +27,15 @@ class AppTexts{
   static const String signupTitle = "Let's create your account";
   static const String firstName = "First Name";
   static const String lastName = "Last Name";
+  static const String username = "Username";
+  static const String phoneNumber = "Phone Number";
 
+  static const String iAgreeTo = "I agree to";
+  static const String privacyPolicy =" Privacy Policy";
+  static const String termsOfUse = " Terms of use";
+  static const String and = " and";
+
+  static const String orSignUpWith = "or sign up with";
 
 
   //Home

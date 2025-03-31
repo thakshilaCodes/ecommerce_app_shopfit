@@ -1,5 +1,7 @@
+import 'package:ecommerce_app_shopfit/features/authentication/screens/signup/signup.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:get/get.dart';
 
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/constants/text_strings.dart';
@@ -71,7 +73,7 @@ class AppLoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: OutlinedButton(
-                onPressed: () {},
+                onPressed: () {Get.to(()=>SignupScreen());},
                 child: Text(AppTexts.createAccount),
               ),
             ),
