@@ -2,7 +2,6 @@ import 'package:ecommerce_app_shopfit/features/authentication/screens/login/logi
 import 'package:ecommerce_app_shopfit/utils/constants/image_strings.dart';
 import 'package:ecommerce_app_shopfit/utils/constants/sizes.dart';
 import 'package:ecommerce_app_shopfit/utils/constants/text_strings.dart';
-import 'package:ecommerce_app_shopfit/utils/helpers/helper_functions.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
