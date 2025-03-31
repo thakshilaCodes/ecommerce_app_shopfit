@@ -9,6 +9,7 @@ import 'package:get/get.dart';
 import 'widgets/onboarding_page.dart';
 
 
+
 class OnBoardingScreen extends StatelessWidget {
   OnBoardingScreen({super.key});
   final controller = Get.put(OnBoardingController());

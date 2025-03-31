@@ -36,6 +36,7 @@ flutter:
   assets:
     - assets/logos/
     - assets/images/on_boarding_images/
+    - assets/images/verify_email/
     - assets/icons/brands/
     - assets/icons/social_media_icons/
 

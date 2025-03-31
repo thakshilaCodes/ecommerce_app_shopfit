@@ -1,16 +1,14 @@
+import 'package:ecommerce_app_shopfit/features/authentication/screens/signup/verify_email.dart';
 import 'package:ecommerce_app_shopfit/features/authentication/screens/signup/widgets/terms_and_conditions.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:get/get.dart';
 
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/constants/text_strings.dart';
 
 class AppSignUpForm extends StatelessWidget {
-  const AppSignUpForm({
-    super.key,
-  });
-
-
+  const AppSignUpForm({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -75,14 +73,14 @@ class AppSignUpForm extends StatelessWidget {
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Get.to(()=>VerifyEmailScreen());
+              },
               child: Text(AppTexts.createAccount),
             ),
           ),
-
         ],
       ),
     );
   }
 }
-

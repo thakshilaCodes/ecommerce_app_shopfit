@@ -36,6 +36,10 @@ class AppTexts{
   static const String and = " and";
 
   static const String orSignUpWith = "or sign up with";
+  static const String confirmEmail ="Verify Your Email Address!";
+  static const String confirmEmailSubTitle = "Congratulations Your Account Awaits: Verify Your Email To Start Shopping And Experience A World Of Unrelieved Deals And Personalized Offers.";
+  static const String appContinue ="Continue";
+  static const String resendEmail = "Resend Email";
 
 
   //Home
