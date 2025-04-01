@@ -1,4 +1,6 @@
+import 'package:ecommerce_app_shopfit/features/authentication/screens/password_configuration/forget_password.dart';
 import 'package:ecommerce_app_shopfit/features/authentication/screens/signup/signup.dart';
+import 'package:ecommerce_app_shopfit/navigation_menu.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:get/get.dart';
@@ -49,7 +51,7 @@ class AppLoginForm extends StatelessWidget {
                 ),
 
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {Get.to(()=>ForgetPassword());},
                   child: Text(
                     AppTexts.forgetPassword,
                     style: Theme.of(context).textTheme.labelLarge,
@@ -63,7 +65,7 @@ class AppLoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {Get.to(()=>NavigationMenu());},
                 child: Text(AppTexts.signIn),
               ),
             ),

@@ -18,4 +18,6 @@ class AppImages{
 
   static const String deliveredEmailIllustration= "assets/images/verify_email/delivered_email_illustration.png";
   static const String successfullyDeliveredEmailIllustration = "assets/images/verify_email/successfully_verified_email_illustration.png";
+
+  static const String resetPasswordScreenIllustration ="assets/images/reset_password/reset_password_screen_illustration.png";
 }

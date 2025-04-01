@@ -49,4 +49,12 @@ class AppTexts{
 
   static const String homeAppBarTitle="Good Day For Shopping";
   static const String homeAppBarSubTitle="Thakshila Fonseka";
+
+  static const String forgetPasswordScreenTitle = "Forget Password";
+  static const String forgetPasswordScreenSubTitle= "Don't worry sometimes people can forget too, enter your email and we will send you a password reset link";
+  static const String submit = "Submit";
+
+  static const String changeYourPasswordTitle="Password Reset Email Sent";
+  static const String changeYourPasswordSubTitle="Your Account Security Is Our Priority! We've Sent You A Secure Link To Safely Change Your Password And Keep Your Account Protected.";
+  static const String done ="Done";
 }
