@@ -1,3 +1,4 @@
+import 'package:ecommerce_app_shopfit/common/widgets/success_screen/success_screen.dart';
 import 'package:ecommerce_app_shopfit/features/authentication/screens/login/login.dart';
 import 'package:ecommerce_app_shopfit/utils/constants/image_strings.dart';
 import 'package:ecommerce_app_shopfit/utils/constants/sizes.dart';
@@ -54,12 +55,30 @@ class VerifyEmailScreen extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.to(
+                      () => SuccessScreen(
+                        image: AppImages.successfullyDeliveredEmailIllustration,
+                        title: AppTexts.successfullyVerifyEmailTitle,
+                        subTitle: AppTexts.successfullyVerifiedEmailSubTitle,
+                        onPressed: () => Get.to(()=>const LoginScreen())
+                      ),
+                    );
+                  },
                   child: Text(AppTexts.appContinue),
                 ),
               ),
-              SizedBox(height: AppSizes.spaceBtwItems,),
-              SizedBox(width: double.infinity,child: TextButton(onPressed: (){}, child: Text(AppTexts.resendEmail,style: Theme.of(context).textTheme.labelLarge,)),)
+              SizedBox(height: AppSizes.spaceBtwItems),
+              SizedBox(
+                width: double.infinity,
+                child: TextButton(
+                  onPressed: () {},
+                  child: Text(
+                    AppTexts.resendEmail,
+                    style: Theme.of(context).textTheme.labelLarge,
+                  ),
+                ),
+              ),
             ],
           ),
         ),

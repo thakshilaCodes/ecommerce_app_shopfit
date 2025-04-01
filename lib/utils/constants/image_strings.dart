@@ -17,4 +17,5 @@ class AppImages{
   static const String facebook ="assets/icons/social_media_icons/facebook-icon.png";
 
   static const String deliveredEmailIllustration= "assets/images/verify_email/delivered_email_illustration.png";
+  static const String successfullyDeliveredEmailIllustration = "assets/images/verify_email/successfully_verified_email_illustration.png";
 }

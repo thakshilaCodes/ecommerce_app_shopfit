@@ -41,6 +41,9 @@ class AppTexts{
   static const String appContinue ="Continue";
   static const String resendEmail = "Resend Email";
 
+  static const String successfullyVerifyEmailTitle="Your Account Successfully Created";
+  static const String successfullyVerifiedEmailSubTitle = "Welcome To Your Ultimate Shopping Destination. Your Account Is Created. Unleash The Joy Of Seamless Online Shopping.";
+
 
   //Home
 
